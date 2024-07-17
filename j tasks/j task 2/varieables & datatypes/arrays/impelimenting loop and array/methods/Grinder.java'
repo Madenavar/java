@@ -1,0 +1,5 @@
+class  Grinder(){
+public static void prepareBatter(){
+System.out.println(This is use for griding a rice,mungdal etc );
+}
+}
