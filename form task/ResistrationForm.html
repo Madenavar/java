@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Resistration form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .redAstris {
+            color: red;
+        }
+
+        .button {
+            margin-top: 32px;
+            margin-left: 692px;
+            
+        }
+
+        .form {
+            margin-top: -11px;
+            background-color: #5f9ea02e;
+
+
+
+
+
+        }
+
+        h1 {
+            font-family: "Kalam", cursive;
+            text-align: center;
+            background-color: #00c5c5;
+            color: #080808;
+            text-shadow: 1px 4px 5px #ffffff;
+        }
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+        }
+
+        label {
+            font-family: "Rajdhani", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Employment Resistration Form</h1>
+
+    <form class="form" name="forName" onsubmit="checkfields()">
+        <div>
+            <h2>Personal Details</h2>
+            <label for="forName">Fisrt Name</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="text" name="forName" required>
+
+
+
+            <label for="forName">Last Name</label>
+            <span>:</span>
+            <input type="txt" name="forName" required>
+        </div>
+        <br>
+        <div>
+            <label for="forName">Date Of Birth</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="date" name="forName" required>
+        </div>
+        <br>
+
+        <label for="">Gender</label>
+        <span class="redAstris">*</span>
+        <span>:</span>
+        <label for="selbox">Male</label>
+        <input type="radio" name="selbox">
+        <label for="selbox">Female</label>
+        <input type="radio" name="selbox">
+
+        <br>
+        <br>
+        <div>
+            <h2>Permanent Address</h2>
+            <label for="forName">Address</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="text" name="forName" required>
+
+            <label for="forName">District</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="text" name="forName" required>
+
+            <label for="forName">City</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="text" name="forName" required>
+        </div>
+        <br>
+        <div>
+            <label for="pincode">Pin Code</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="number" name="pincode" min="6" max="6" required> (6 digit number)
+        </div>
+        <br>
+        <div>
+            <label for="forName">State</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="txt" name="forName" required>
+
+            <label for="forName">Country</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="txt" name="forName" required>
+        </div>
+
+        <br>
+
+
+        <div>
+            <label for="forName">Contact Number</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="number" name="forName" required>(Enter 10 digit number)
+        </div>
+
+        <div>
+            <h2>Qualification</h2>
+
+            <label for="forName">University/School</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="txt" name="forName" required>
+
+
+            <label for="forName">Course</label>
+
+            <span>:</span>
+            <input type="txt" name="forName" required>
+
+
+            <label for="forName">Stream</label>
+
+            <span>:</span>
+            <input type="txt" name="forName" required>
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="forName">Year Of Passing</label>
+            <span>:</span>
+            <input type="date" name="forName" required>
+
+            <label for="forName">Percentage/CGPA</label>
+            <span class="redAstris">*</span>
+            <span>:</span>
+            <input type="number" name="forName" required>
+        </div>
+        <br>
+        <div>
+            <h3><u>Applying For The Post</u></h3>
+            <label for="selbox">Software Devolper</label>
+            <input type="radio" name="selbox">
+            <label for="selbox">Associate Software Devolper</label>
+            <input type="radio" name="selbox">
+            <label for="selbox">Software intern</label>
+            <input type="radio" name="selbox">
+            <label for="selbox">UI/UX Designer </label>
+            <input type="radio" name="selbox">
+
+
+        </div>
+
+
+
+
+
+
+        <div class="button">
+            <button type="submit" value="submit">Submit</button>
+            <button type="clear" value="submit"> Cancel</button>
+        </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
