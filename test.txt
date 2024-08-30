@@ -1,0 +1,172 @@
+1)Polymophism :Polymorphism is a concept in object-oriented programming  that refers to the ability of an object to take on multiple forms. 
+This can be achieved through method overriding or method overloading.
+
+Method Overriding:
+
+In method overriding a subclass provides a different implementation of a method that is already defined in its superclass. The method name, return type, and parameter list are the same, but the implementation is different.
+
+
+
+public void sound() {
+System.out.println("The animal makes a sound");
+}
+
+Dog (subclass):
+
+public void sound() {
+System.out.println("The dog barks");
+}
+
+Cat (subclass):
+
+public void sound() {
+System.out.println("The cat meows");
+}
+
+Method Overloading:
+
+In method overloading, multiple methods with the same name can be defined, but with different parameter lists. This allows an object to respond differently to different inputs.
+
+
+
+public int add(int a, int b) {
+return a + b;
+}
+
+public int add(int a, int b, int c) {
+return a + b + c;
+}
+
+public double add(double a, double b) {
+return a + b;
+}
+
+-------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+2)Constructor Chaining: 
+	
+ where a constructor calls another constructor in the same class or a superclass. 
+
+1. Code reuse
+2. Simplified construction processes
+3. Improved readability
+
+Types of constructor chaining:
+
+ Within the same class: A constructor calls another constructor in the same class, passing parameters to initialize objects.
+
+Example:
+
+public class Person {
+private String name;
+private int age;
+
+public Person(String name) {
+	this(name, 0); // Calls the other constructor
+}
+
+public Person(String name, int age) {
+	this.name = name;
+	this.age = age;
+}
+
+}
+
+   To a superclass: A subclass constructor calls a superclass constructor using the super keyword.
+
+  Example:
+
+public class Animal {
+private String name;
+
+public Animal(String name) {
+	this.name = name;
+}
+
+}
+
+public class Dog extends Animal {
+private String breed;
+
+public Dog(String name, String breed) {
+	super(name); // Calls the Animal constructor
+	this.breed = breed;
+}
+
+}
+--------------------------------------------------------------------------------------------
+3)Inheritance: inherit properties and behavior from another class.
+ The inheriting class known as the subclass or child class, 
+ inherits the attributes and methods of the parent class, also known as the superclass or base class.
+
+
+ public Car extendes Vehicle(){
+}
+
+Vehicle (Superclass):
+
+ Attributes: color, maxSpeed
+ Methods: startEngine(), accelerate()
+
+Car (Subclass):
+
+ Inherits attributes: color, maxSpeed
+ Inherits methods: startEngine(), accelerate()
+ Additional attributes: numDoors, transmissionType
+ Additional methods: openTrunk(), closeTrunk()
+
+
+
+Inheritance benefits:
+
+ Code reuse
+ Hierarchical relationships
+ Polymorphism
+ 
+ --------------------------------------------------------------------------------------------------------------------------------
+
+ 4)Encapsulation : Encapsulation is  binds together the data  and the methods  that manipulate that data into a single unit,
+ called a class or object.
+
+ Hide internal implementation details
+ Protect data from external interference or misuse
+ Improve code organization and readability
+
+
+BankAccount (Class):
+
+ Private attributes:
+     accountNumber
+     accountHolderName
+     balance
+ Public methods:
+     getAccountNumber()
+     getAccountHolderName()
+     getBalance()
+     deposit(amount)
+     withdraw(amount)
+
+
+
+Benefits of encapsulation:
+
+ Improved security
+ Reduced complexity
+ Increased reusability
+ Easier maintenance
+
+
+
+  
+
+
+
+
+
+
+
